@@ -7,7 +7,7 @@
 
 void lz4_basic_test(){
     std::vector<char> data;
-    for(auto c : "Helllllllllllllllllllllllllllo Worllllld!"){
+    for(auto c : "Helllllllo Wooooorlllld!"){
         data.push_back(c);
     }
     std::vector<char> compressed_data(data.size()), decompressed_data(data.size());

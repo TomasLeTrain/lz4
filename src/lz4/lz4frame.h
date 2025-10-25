@@ -1,8 +1,7 @@
 /*
    LZ4F - LZ4-Frame library
    Header File
-   Copyright (c) Yann Collet. All rights reserved.
-
+   Copyright (C) 2011-2020, Yann Collet.
    BSD 2-Clause License (http://www.opensource.org/licenses/bsd-license.php)
 
    Redistribution and use in source and binary forms, with or without

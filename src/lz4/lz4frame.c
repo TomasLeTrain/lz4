@@ -1,6 +1,6 @@
 /*
  * LZ4 auto-framing library
- * Copyright (c) Yann Collet. All rights reserved.
+ * Copyright (C) 2011-2016, Yann Collet.
  *
  * BSD 2-Clause License (http://www.opensource.org/licenses/bsd-license.php)
  *
@@ -997,7 +997,7 @@ static size_t LZ4F_compressUpdateImpl(LZ4F_cctx* cctxPtr,
   {
     size_t const blockSize = cctxPtr->maxBlockSize;
     const BYTE* srcPtr = (const BYTE*)srcBuffer;
-    const BYTE* const srcEnd = srcSize ? (assert(srcPtr!=NULL), srcPtr + srcSize) : srcPtr;
+    const BYTE* const srcEnd = srcPtr + srcSize;
     BYTE* const dstStart = (BYTE*)dstBuffer;
     BYTE* dstPtr = dstStart;
     LZ4F_lastBlockStatus lastBlockCompressed = notDone;
